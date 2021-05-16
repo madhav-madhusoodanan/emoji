@@ -4,7 +4,7 @@ const fs = require("fs");
 const emoji = require("./emoji"); // array
 
 // create a JSON object
-var data = emoji.map((obj) => obj["char"]);
+var data = JSON.stringify(emoji.map((obj) => obj["char"]));
 
 // convert JSON object to string
 
